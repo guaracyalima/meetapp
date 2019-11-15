@@ -28,3 +28,8 @@ na configuração do ESLint foram adicionadas as seguintes rules:
 
 ### Running
 Foi adicionado o script `dev` no `package.json`  para que o servidor seja startado com o nodemon, para evitar os erros provenientes da utilização do padrão `commonsjs` em substituição do `require`
+
+### Database
+No arquivo de configuração das credencias do banco de dados `src/config/database.js` foram adicionados as linhas define com as propriedades:
+- `timestamps: true` que 'habilita' a geração dos timestamps
+- `underscored: true` e `underscoredAll: true` que permite a criação de tabelas e campos com a utilização do padrao underscored `MINHA_TABELA_DE_USUARIOS`
