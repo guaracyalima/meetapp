@@ -4,6 +4,13 @@ import User from '../models/User';
  * Controle de usuarios
  */
 class UserController {
+  async index(req, res) {
+    const
+      user = await User.findAll();
+    return res.json({
+      user,
+    });
+  }
   /* eslint valid-jsdoc: "error" */
   /* eslint-env es6 */
   /**
