@@ -26,7 +26,7 @@ class UserController {
     // camada de validacao
     const validation = await UserValidator.createValidator(req.body);
 
-    if (validation) {
+    if (!validation) {
       return res.status(400)
         .json({
           error: 'Validation error',

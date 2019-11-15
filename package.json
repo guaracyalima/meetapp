@@ -18,6 +18,7 @@
     "dev": "nodemon src/server.js"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "editorconfig": "^0.15.3",
     "express": "^4.17.1",
     "pg": "^7.12.1",
