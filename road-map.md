@@ -12,8 +12,13 @@ meetapp/
       |    |   ├── UserController.js
       |    └── middlewares/
       └── config/
+      |         ├── database.js
       └── database/
-          └── migrations/
+      |    ├── index.js
+      |    └── migrations/
+      ├─── app.js
+      ├─── routes.js
+      ├─── server.js
 
 
 ```
