@@ -18,7 +18,8 @@
     "dev": "nodemon src/server.js"
   },
   "dependencies": {
-    "editorconfig": "^0.15.3"
+    "editorconfig": "^0.15.3",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
