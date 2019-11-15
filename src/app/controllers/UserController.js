@@ -4,19 +4,6 @@ import User from '../models/User';
  * Controle de usuarios
  */
 class UserController {
-  miolo(req, res) {
-    console.log(req);
-    return res.json({
-      uk: '____________-',
-    });
-  }
-
-  index(req, res) {
-    console.log(req);
-    return res.json({
-      success: 'Chamind',
-    });
-  }
   /* eslint valid-jsdoc: "error" */
   /* eslint-env es6 */
   /**
@@ -26,10 +13,19 @@ class UserController {
 	 * @return {[type]}     retorna um JSON com o usuário criado
 	 * */
 
-  store(req, res) {
-    const user = User.create(req.body);
+  async store(req, res) {
+    const {
+      id,
+      name,
+      email,
+      provider,
+    } = await User.create(req.body);
+
     return res.json({
-      user,
+      id,
+      name,
+      email,
+      provider,
     });
   }
 }
