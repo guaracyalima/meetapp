@@ -1,0 +1,36 @@
+{
+  "name": "meetapp",
+  "version": "1.0.0",
+  "description": "Projeto de app de meetapp em NodeJS",
+  "main": "src/server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guaracyalima/meetapp.git"
+  },
+  "keywords": [
+    "js",
+    "node",
+    "camping",
+    "meetapp"
+  ],
+  "author": "Guaracy A Lima <guaracyaraujolima@gmail.com> (http://guabirabadev.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guaracyalima/meetapp/issues"
+  },
+  "homepage": "https://github.com/guaracyalima/meetapp#readme",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "editorconfig": "^0.15.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
