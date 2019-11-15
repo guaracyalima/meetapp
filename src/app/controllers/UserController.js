@@ -1,3 +1,5 @@
+import * as yup from 'yup';
+import UserValidator from '../validators/UserValidator';
 import User from '../models/User';
 
 /**
@@ -21,6 +23,16 @@ class UserController {
 	 * */
 
   async store(req, res) {
+    // camada de validacao
+    const validation = await UserValidator.createValidator(req.body);
+
+    if (validation) {
+      return res.status(400)
+        .json({
+          error: 'Validation error',
+        });
+    }
+
     const {
       id,
       name,
