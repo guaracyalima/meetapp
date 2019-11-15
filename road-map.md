@@ -7,15 +7,14 @@ meetapp/
 └── app/
       └── app/
       |    ├── models/
-      |    │   ├── User.js
       |    └── controllers/
-      |    |   ├── UserController.js
       |    └── middlewares/
       └── config/
       |         ├── database.js
       └── database/
       |    ├── index.js
-      |    └── migrations/
+      |    ├── migrations/
+      |    └── seeds/
       ├─── app.js
       ├─── routes.js
       ├─── server.js
