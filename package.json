@@ -7,14 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/guaracyalima/meetapp.git"
   },
-  "keywords": [
-    "js",
-    "node",
-    "camping",
-    "meetapp"
-  ],
-  "author": "Guaracy A Lima <guaracyaraujolima@gmail.com> (http://guabirabadev.github.io/)",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/guaracyalima/meetapp/issues"
   },
@@ -22,9 +17,6 @@
   "scripts": {
     "dev": "nodemon src/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "editorconfig": "^0.15.3"
   },
