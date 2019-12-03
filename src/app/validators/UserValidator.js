@@ -8,7 +8,7 @@ class UserValidator {
           .required(),
         email: yup.string()
           .required(),
-        passowrd: yup.string()
+        password: yup.string()
           .required()
           .min(6),
       });

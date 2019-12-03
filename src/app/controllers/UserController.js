@@ -25,7 +25,7 @@ class UserController {
   async store(req, res) {
     // camada de validacao
     const validation = await UserValidator.createValidator(req.body);
-
+    console.log('validation', validation);
     if (!validation) {
       return res.status(400)
         .json({
